@@ -65,6 +65,25 @@
       0 10px 10px rgba(0, 0, 0, 0.22);
     }
 
+    .heart-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      pointer-events: none;
+      text-shadow:
+              0 0 10px #ff5ca4,
+              0 0 20px #ff5ca4,
+              0 0 40px #ff5ca4;
+      z-index: 10;
+    }
+
+
     #pinkboard:after {
       left: 0;
       transform: rotate(45deg);
@@ -93,8 +112,8 @@
 
 <BODY>
 <div class="box">
-  <canvas id="pinkboard">
-  </canvas>
+  <canvas id="pinkboard"></canvas>
+  <div class="heart-text"> Huy</div>
 </div>
 <script>
   /*
